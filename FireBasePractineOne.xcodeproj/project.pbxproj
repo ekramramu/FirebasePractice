@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E593955C077C00001A4150F /* libPods-FireBasePractineOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B161E40576494381AA96C0 /* libPods-FireBasePractineOne.a */; };
 		C1C1955A1FB30C060084D1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C195591FB30C060084D1F6 /* AppDelegate.swift */; };
 		C1C1955C1FB30C060084D1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C1955B1FB30C060084D1F6 /* ViewController.swift */; };
 		C1C1955F1FB30C060084D1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C1955D1FB30C060084D1F6 /* Main.storyboard */; };
 		C1C195611FB30C060084D1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1C195601FB30C060084D1F6 /* Assets.xcassets */; };
 		C1C195641FB30C060084D1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1C195621FB30C060084D1F6 /* LaunchScreen.storyboard */; };
+		C1C1956C1FB30DED0084D1F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1C1956B1FB30DED0084D1F6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BB539D334140CF463DE5CAA /* Pods-FireBasePractineOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBasePractineOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBasePractineOne/Pods-FireBasePractineOne.release.xcconfig"; sourceTree = "<group>"; };
+		9D342B24F784095409093A88 /* Pods-FireBasePractineOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBasePractineOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBasePractineOne/Pods-FireBasePractineOne.debug.xcconfig"; sourceTree = "<group>"; };
+		A1B161E40576494381AA96C0 /* libPods-FireBasePractineOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireBasePractineOne.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C195561FB30C060084D1F6 /* FireBasePractineOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBasePractineOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1C195591FB30C060084D1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1C1955B1FB30C060084D1F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C1C195601FB30C060084D1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1C195631FB30C060084D1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1C195651FB30C060084D1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C1956B1FB30DED0084D1F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E593955C077C00001A4150F /* libPods-FireBasePractineOne.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE5327FC9CEC4C776328449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B161E40576494381AA96C0 /* libPods-FireBasePractineOne.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5461757E96780B05AC272D94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D342B24F784095409093A88 /* Pods-FireBasePractineOne.debug.xcconfig */,
+				7BB539D334140CF463DE5CAA /* Pods-FireBasePractineOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C1C1954D1FB30C050084D1F6 = {
 			isa = PBXGroup;
 			children = (
 				C1C195581FB30C060084D1F6 /* FireBasePractineOne */,
 				C1C195571FB30C060084D1F6 /* Products */,
+				5461757E96780B05AC272D94 /* Pods */,
+				0AE5327FC9CEC4C776328449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				C1C195601FB30C060084D1F6 /* Assets.xcassets */,
 				C1C195621FB30C060084D1F6 /* LaunchScreen.storyboard */,
 				C1C195651FB30C060084D1F6 /* Info.plist */,
+				C1C1956B1FB30DED0084D1F6 /* GoogleService-Info.plist */,
 			);
 			path = FireBasePractineOne;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1C195681FB30C060084D1F6 /* Build configuration list for PBXNativeTarget "FireBasePractineOne" */;
 			buildPhases = (
+				9FF79517CAE76E9E8BB6FE29 /* [CP] Check Pods Manifest.lock */,
 				C1C195521FB30C060084D1F6 /* Sources */,
 				C1C195531FB30C060084D1F6 /* Frameworks */,
 				C1C195541FB30C060084D1F6 /* Resources */,
+				54357822EFD87335E8B25A81 /* [CP] Embed Pods Frameworks */,
+				D11AD8ED98313D89ECBB06E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C195641FB30C060084D1F6 /* LaunchScreen.storyboard in Resources */,
+				C1C1956C1FB30DED0084D1F6 /* GoogleService-Info.plist in Resources */,
 				C1C195611FB30C060084D1F6 /* Assets.xcassets in Resources */,
 				C1C1955F1FB30C060084D1F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54357822EFD87335E8B25A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBasePractineOne/Pods-FireBasePractineOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FF79517CAE76E9E8BB6FE29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FireBasePractineOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D11AD8ED98313D89ECBB06E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBasePractineOne/Pods-FireBasePractineOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C1C195521FB30C060084D1F6 /* Sources */ = {
@@ -258,6 +340,7 @@
 		};
 		C1C195691FB30C060084D1F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D342B24F784095409093A88 /* Pods-FireBasePractineOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FireBasePractineOne/Info.plist;
@@ -270,6 +353,7 @@
 		};
 		C1C1956A1FB30C060084D1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB539D334140CF463DE5CAA /* Pods-FireBasePractineOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FireBasePractineOne/Info.plist;
